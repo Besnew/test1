@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true.code</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__mobile">
+                <a href="#">
+                    <img class="header__logo" src="./img/logo.png" alt="logo">
+                </a>
+                <div class="header__burger" onclick="toggleMenu()">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </div>
+            </div>
+            <div class="header__contentbar">
+                <div class="header__contacts">
+                    <a href="tel:+73952261260" class="header__tel">+7 (3952) 26-12-60</a>
+                    <a href="#" class="header__website">support@t-code.ru</a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Вакансии</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Кто мы?</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Что мы предлагаем?</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Отзывы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Правила</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#application" class="header__anchor">Подать заявку</a>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h3>Мы открываем набор <br> на наши огненные <br> стажировки!</h3>
+                            <h6>Присоединяйся к нашей дружной команде <br> и начни свой путь в мире digital.</h6>
+                        </div>
+                        <img class="hero__img" src="./img/hero.png" alt="hero">
+                    </div>
+
+                </div>
+                <img class="hero__bg" src="./img/bg-1.png" alt="background image">
+
+            </section>
+            <section class="careers">
+                <div class="careers__container">
+                    <div class="careers__slider">
+                        <div class="careers__slidebar">
+                            <div class="careers__slide">
+                                <img class="careers__slide-img" src="./img/slider-1.png" alt="">
+                                <h4>Веб-дизайнер</h4>
+                                <div class="careers__slide-links">
+                                    <a href="#" class="careers__slide-link">Подробнее</a>
+                                    <a href="#" class="careers__slide-link">Подать заявку</a>
+                                </div>
+                            </div>
+                            <div class="careers__slide">
+                                <img class="careers__slide-img" src="./img/slider-2.png" alt="">
+                                <h4>Разработчик</h4>
+                                <div class="careers__slide-links">
+                                    <a href="#" class="careers__slide-link">Подробнее</a>
+                                    <a href="#" class="careers__slide-link">Подать заявку</a>
+                                </div>
+                            </div>
+                            <div class="careers__slide">
+                                <img class="careers__slide-img" src="./img/slider-3.png" alt="">
+                                <h4>Менеджер проектов</h4>
+                                <div class="careers__slide-links">
+                                    <a href="#" class="careers__slide-link">Подробнее</a>
+                                    <a href="#" class="careers__slide-link">Подать заявку</a>
+                                </div>
+                            </div>
+                            <div class="careers__slide">
+                                <img class="careers__slide-img" src="./img/slider-3.png" alt="">
+                                <h4>Менеджер проектов</h4>
+                                <div class="careers__slide-links">
+                                    <a href="#" class="careers__slide-link">Подробнее</a>
+                                    <a href="#" class="careers__slide-link">Подать заявку</a>
+                                </div>
+                            </div>
+                            <div class="careers__slide">
+                                <img class="careers__slide-img" src="./img/slider-3.png" alt="">
+                                <h4>Менеджер проектов</h4>
+                                <div class="careers__slide-links">
+                                    <a href="#" class="careers__slide-link">Подробнее</a>
+                                    <a href="#" class="careers__slide-link">Подать заявку</a>
+                                </div>
+                            </div>
+                            <div class="careers__slide">
+                                <img class="careers__slide-img" src="./img/slider-3.png" alt="">
+                                <h4>Менеджер проектов</h4>
+                                <div class="careers__slide-links">
+                                    <a href="#" class="careers__slide-link">Подробнее</a>
+                                    <a href="#" class="careers__slide-link">Подать заявку</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="careers__controls">
+                            <button id="prev" class="careers__controls-btn"><svg class="careers__controls-icon"
+                                    width="11" height="15" viewBox="0 0 11 15" fill="#352958"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.3583e-07 7.50002C3.23793e-07 7.76885 0.132052 8.03765 0.395601 8.24261L8.69309 14.6923C9.22091 15.1026 10.0767 15.1026 10.6043 14.6923C11.1319 14.2822 11.1319 13.6171 10.6043 13.2068L3.26222 7.50002L10.604 1.79323C11.1316 1.38295 11.1316 0.717947 10.604 0.307862C10.0764 -0.10262 9.22065 -0.10262 8.69283 0.307862L0.395344 6.75744C0.131753 6.9625 3.47863e-07 7.23129 3.3583e-07 7.50002Z" />
+                                </svg>
+                            </button>
+                            <button id="next" class="careers__controls-btn"><svg class="careers__controls-icon"
+                                    width="11" height="15" viewBox="0 0 11 15" fill="#352958"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 7.49998C11 7.23114 10.8679 6.96235 10.6044 6.75739L2.30691 0.307713C1.77909 -0.102571 0.923317 -0.102571 0.395707 0.307713C-0.131902 0.71783 -0.131902 1.3829 0.395707 1.79322L7.73778 7.49998L0.395963 13.2068C-0.131647 13.617 -0.131647 14.2821 0.395963 14.6921C0.923572 15.1026 1.77935 15.1026 2.30717 14.6921L10.6047 8.24256C10.8682 8.0375 11 7.76871 11 7.49998Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div id="nextMob" class="careers__controls--mobile">
+                        <button><svg width="25" height="15" viewBox="0 0 25 15" fill="#352958"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.2217 3.77419L11.0978 13.6503C11.8682 14.4166 13.1125 14.4166 13.8828 13.6503L23.7589 3.77419C24.3929 3.03548 24.3929 1.94317 23.7589 1.20447C23.0498 0.376812 21.8015 0.28009 20.9738 0.989209L12.5002 9.46278L4.00678 0.989107C3.2364 0.222713 1.99208 0.222712 1.2217 0.989107C0.45531 1.75949 0.45531 3.00391 1.2217 3.77419Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <img src="./img/hero.png" class="hero__img--mobile" alt="hero image">
+                </div>
+            </section>
+            <section class="application" id="application">
+                <div class="application__container">
+                    <h5>Заявка</h5>
+                    <div class="application__form-container">
+                        <form action="submit" class="application__form" novalidate>
+                            <div class="application__form-inpgroup">
+                                <div class="application__form-input">
+                                    <span>Имя:</span>
+                                    <input class="application__form-inputfield" id="#name" type="text" required>
+                                </div>
+                                <div class="application__form-input">
+                                    <span>Телефон/e-mail:</span>
+                                    <input class="application__form-inputfield" type="text" required>
+                                </div>
+                                <div class="application__form-input">
+                                    <span>Направление стажировки:</span>
+                                    <input class="application__form-inputfield" type="text" required>
+                                </div>
+                                <div class="application__form-input">
+                                    <span>Ссылка на портфолио:</span>
+                                    <input class="application__form-inputfield" type="text">
+                                </div>
+                            </div>
+                            <p class="application__form-divider">или</p>
+                            <div class="application__form-upload">
+                                <label for="file">
+                                    <div class="application__form-ico">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="#352958"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.2401 4.50668L11.4304 5.66237L6.15253 10.9459C5.88769 11.2124 5.88769 11.6413 6.15253 11.9078C6.40384 12.1606 6.82366 12.1595 7.07229 11.9064L12.8791 6.09093C13.7269 5.23806 13.7269 3.86836 12.8791 3.01549C12.0703 2.20176 10.6392 2.21986 9.84652 3.01704L3.50848 9.35999C2.07752 10.799 2.07752 13.1098 3.50848 14.5489C4.89801 15.9463 7.28501 15.9235 8.65284 14.5476L16.0449 7.14635L17.2353 8.30193L9.84468 15.7018C7.82822 17.7302 4.36516 17.7632 2.31543 15.7019C0.247607 13.6224 0.247608 10.2865 2.31685 8.20556L8.65489 1.86261C10.0946 0.414785 12.6017 0.383074 14.0724 1.86272C15.5567 3.356 15.5567 5.75042 14.0711 7.24504L8.26774 13.057C7.37001 13.971 5.86818 13.9751 4.95914 13.0604C4.05789 12.1536 4.05789 10.7001 4.96065 9.79174L10.2401 4.50668Z" />
+                                        </svg>
+                                    </div>
+                                    <span>Прикрепить файл портфолио</span>
+                                </label>
+                                <input type="file" id="file" name="file">
+                            </div>
+                            <textarea class="application__form-about" placeholder="Расскажите о себе:"
+                                rows="4"></textarea>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" required>
+                                <div><img src="./img/mark.png" alt=""></div>
+                                <span>Отправляя заявку, я подтверждаю свое согласие с политикой <br>
+                                    конфиденциальности.</span>
+                            </label>
+                            <button class="application__form-submit" type="submit">Пройти стажировку</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__info">
+                    <img class="footer__logo" src="./img/logo.png" alt="logo">
+                    <p class="footer__year">@2021</p>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__contacts">
+                        <a href="tel:+73952261260" class="footer__tel">+7 (3952) 26-12-60</a>
+                        <div class="footer__socials">
+                            <div class="footer__socials-item">
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="#352958"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.7932 5.59818C13.2708 6.06084 13.775 6.49613 14.2034 7.00544C14.3926 7.23177 14.5718 7.46533 14.7089 7.72798C14.9031 8.10137 14.7272 8.51225 14.3897 8.53455L12.2919 8.53361C11.7508 8.57815 11.3192 8.36205 10.9563 7.99505C10.6658 7.70156 10.3968 7.3892 10.1175 7.0858C10.003 6.96179 9.88321 6.8451 9.74004 6.75287C9.45366 6.56846 9.20508 6.62492 9.04142 6.92124C8.87474 7.22262 8.83694 7.55634 8.82057 7.89222C8.79809 8.38228 8.64878 8.51112 8.15256 8.53356C7.0921 8.58317 6.08568 8.42401 5.15074 7.8933C4.32646 7.42543 3.68727 6.76494 3.13092 6.01719C2.0477 4.56116 1.21818 2.96123 0.472627 1.31647C0.30481 0.945906 0.427538 0.746988 0.839677 0.739947C1.52405 0.726758 2.20833 0.727697 2.89351 0.739009C3.17166 0.743045 3.3558 0.901316 3.4632 1.162C3.83346 2.06521 4.28653 2.92452 4.85522 3.72104C5.00667 3.9331 5.1611 4.14516 5.381 4.29442C5.62428 4.45968 5.80951 4.40491 5.92396 4.13606C5.99659 3.96558 6.02838 3.78197 6.04475 3.59938C6.09897 2.97123 6.10611 2.34415 6.01102 1.7182C5.95263 1.32755 5.73083 1.07465 5.3379 1.00073C5.13739 0.963038 5.16725 0.889019 5.26433 0.775479C5.43295 0.579659 5.59155 0.457764 5.90769 0.457764H8.27856C8.65181 0.530844 8.7347 0.697188 8.78579 1.06977L8.78783 3.68241C8.78376 3.82665 8.86045 4.25466 9.12233 4.35013C9.33192 4.4181 9.47007 4.25175 9.59583 4.11991C10.1635 3.52222 10.5686 2.81587 10.9306 2.08445C11.0912 1.76284 11.2293 1.42884 11.3631 1.09512C11.4623 0.84748 11.6179 0.725632 11.8991 0.731029L14.1809 0.733048C14.2486 0.733048 14.317 0.734033 14.3826 0.745157C14.7671 0.810165 14.8724 0.974256 14.7537 1.34675C14.5666 1.93116 14.2025 2.41817 13.8465 2.90744C13.466 3.4298 13.059 3.93427 12.6816 4.45973C12.3349 4.93957 12.3625 5.18143 12.7932 5.59818Z" />
+                                </svg>
+
+                            </div>
+                            <div class="footer__socials-item">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="#352958"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5725 0.785767H2.42749C1.49708 0.785767 0.73999 1.53684 0.73999 2.45987V10.5402C0.73999 11.4632 1.49708 12.2143 2.42749 12.2143H5.82499V8.17413H4.47499V6.16521H5.82499V4.80361C5.82499 3.69582 6.73334 2.79469 7.84999 2.79469H9.89749V4.80361H7.84999V6.16521H9.89749L9.55999 8.17413H7.84999V12.2143H10.5725C11.5029 12.2143 12.26 11.4632 12.26 10.5402V2.45987C12.26 1.53684 11.5029 0.785767 10.5725 0.785767Z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="footer__socials-item">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="#352958"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_271_451)">
+                                        <path
+                                            d="M12.1188 3.68246C12.0886 3.00384 11.9733 2.63341 11.8773 2.38827C11.7645 2.08554 11.5862 1.81311 11.3527 1.58681C11.1276 1.35532 10.8501 1.17816 10.5453 1.06651C10.2982 0.971241 9.92738 0.856863 9.24101 0.826835C8.5021 0.794078 8.27982 0.785889 6.40145 0.785889C4.52583 0.785889 4.30328 0.794078 3.56189 0.826835C2.87827 0.856863 2.50469 0.971241 2.25738 1.06651C1.95257 1.17816 1.67802 1.35532 1.45024 1.58681C1.21393 1.81038 1.03539 2.08554 0.922876 2.38827C0.826592 2.63341 0.711326 3.00138 0.68134 3.68246C0.648054 4.41541 0.640076 4.63898 0.640076 6.50015C0.640076 8.36132 0.648054 8.58216 0.68134 9.31783C0.711326 9.99619 0.826592 10.3669 0.922876 10.6123C1.03539 10.9145 1.21393 11.1872 1.44749 11.4132C1.67252 11.645 1.94982 11.8221 2.25463 11.9338C2.50194 12.0291 2.8725 12.1437 3.55914 12.1735C4.29778 12.2062 4.52308 12.2144 6.3987 12.2144C8.27432 12.2144 8.4966 12.2062 9.23826 12.1735C9.92188 12.1437 10.2955 12.0291 10.5425 11.9338C11.1549 11.6993 11.641 11.2172 11.8773 10.6093C11.9733 10.3642 12.0886 9.99619 12.1188 9.31511C12.1518 8.57943 12.1601 8.36132 12.1601 6.50015C12.1601 4.63898 12.1518 4.41814 12.1188 3.68246ZM6.39595 10.0781C4.40231 10.0781 2.78474 8.47297 2.78474 6.49469C2.78474 4.51641 4.40231 2.9113 6.39595 2.9113C8.38958 2.9113 10.0072 4.51641 10.0072 6.49469C10.0072 8.47297 8.38958 10.0781 6.39595 10.0781ZM10.1499 3.6063C9.68419 3.6063 9.30676 3.2315 9.30676 2.76962C9.30676 2.30747 9.68419 1.93322 10.1499 1.93322C10.6154 1.93322 10.9931 2.30747 10.9931 2.76962C10.9931 3.2315 10.6154 3.6063 10.1499 3.6063Z" />
+                                        <path
+                                            d="M8.05201 8.13841C8.96679 7.23067 8.96679 5.75895 8.05201 4.85122C7.13723 3.94349 5.65408 3.94349 4.7393 4.85122C3.82452 5.75895 3.82452 7.23067 4.7393 8.13841C5.65408 9.04614 7.13723 9.04614 8.05201 8.13841Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_271_451">
+                                            <rect width="11.52" height="11.4285" fill="white"
+                                                transform="translate(0.640076 0.785889)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#application" class="footer__link">Подать заявку</a>
+                </div>
+                <p class="footer__year--mobile">@2021</p>
+            </div>
+        </footer>
+        <img class="bg--gradient" src="./img/bg-2.png" alt="background gradient">
+        <div class="menu">
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <span class="menu__accordion-open" onclick="toggleAccordion(this)">Вакансии</span>
+                        <ul class="menu__accordion-content">
+                            <li><a href="#">Веб-дизайнер</a></li>
+                            <li><a href="#">Разработчик</a></li>
+                            <li><a href="#">Менеджер проектов</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#">Кто мы?</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#">Что мы предлагаем?</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#">Правила</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#" class="menu__link">Подать заявку</a>
+            </div>
+            <div class="menu__contacts">
+                <div class="menu__tel">+7 (3952) 26-12-60</div>
+                <div class="menu__socials">
+                    <div class="menu__socials-item">
+                        <svg width="15" height="9" viewBox="0 0 15 9" fill="#352958" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.7932 5.59818C13.2708 6.06084 13.775 6.49613 14.2034 7.00544C14.3926 7.23177 14.5718 7.46533 14.7089 7.72798C14.9031 8.10137 14.7272 8.51225 14.3897 8.53455L12.2919 8.53361C11.7508 8.57815 11.3192 8.36205 10.9563 7.99505C10.6658 7.70156 10.3968 7.3892 10.1175 7.0858C10.003 6.96179 9.88321 6.8451 9.74004 6.75287C9.45366 6.56846 9.20508 6.62492 9.04142 6.92124C8.87474 7.22262 8.83694 7.55634 8.82057 7.89222C8.79809 8.38228 8.64878 8.51112 8.15256 8.53356C7.0921 8.58317 6.08568 8.42401 5.15074 7.8933C4.32646 7.42543 3.68727 6.76494 3.13092 6.01719C2.0477 4.56116 1.21818 2.96123 0.472627 1.31647C0.30481 0.945906 0.427538 0.746988 0.839677 0.739947C1.52405 0.726758 2.20833 0.727697 2.89351 0.739009C3.17166 0.743045 3.3558 0.901316 3.4632 1.162C3.83346 2.06521 4.28653 2.92452 4.85522 3.72104C5.00667 3.9331 5.1611 4.14516 5.381 4.29442C5.62428 4.45968 5.80951 4.40491 5.92396 4.13606C5.99659 3.96558 6.02838 3.78197 6.04475 3.59938C6.09897 2.97123 6.10611 2.34415 6.01102 1.7182C5.95263 1.32755 5.73083 1.07465 5.3379 1.00073C5.13739 0.963038 5.16725 0.889019 5.26433 0.775479C5.43295 0.579659 5.59155 0.457764 5.90769 0.457764H8.27856C8.65181 0.530844 8.7347 0.697188 8.78579 1.06977L8.78783 3.68241C8.78376 3.82665 8.86045 4.25466 9.12233 4.35013C9.33192 4.4181 9.47007 4.25175 9.59583 4.11991C10.1635 3.52222 10.5686 2.81587 10.9306 2.08445C11.0912 1.76284 11.2293 1.42884 11.3631 1.09512C11.4623 0.84748 11.6179 0.725632 11.8991 0.731029L14.1809 0.733048C14.2486 0.733048 14.317 0.734033 14.3826 0.745157C14.7671 0.810165 14.8724 0.974256 14.7537 1.34675C14.5666 1.93116 14.2025 2.41817 13.8465 2.90744C13.466 3.4298 13.059 3.93427 12.6816 4.45973C12.3349 4.93957 12.3625 5.18143 12.7932 5.59818Z" />
+                        </svg>
+
+                    </div>
+                    <div class="menu__socials-item">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="#352958"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5725 0.785767H2.42749C1.49708 0.785767 0.73999 1.53684 0.73999 2.45987V10.5402C0.73999 11.4632 1.49708 12.2143 2.42749 12.2143H5.82499V8.17413H4.47499V6.16521H5.82499V4.80361C5.82499 3.69582 6.73334 2.79469 7.84999 2.79469H9.89749V4.80361H7.84999V6.16521H9.89749L9.55999 8.17413H7.84999V12.2143H10.5725C11.5029 12.2143 12.26 11.4632 12.26 10.5402V2.45987C12.26 1.53684 11.5029 0.785767 10.5725 0.785767Z" />
+                        </svg>
+
+
+                    </div>
+                    <div class="menu__socials-item">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="#352958"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_271_451)">
+                                <path
+                                    d="M12.1188 3.68246C12.0886 3.00384 11.9733 2.63341 11.8773 2.38827C11.7645 2.08554 11.5862 1.81311 11.3527 1.58681C11.1276 1.35532 10.8501 1.17816 10.5453 1.06651C10.2982 0.971241 9.92738 0.856863 9.24101 0.826835C8.5021 0.794078 8.27982 0.785889 6.40145 0.785889C4.52583 0.785889 4.30328 0.794078 3.56189 0.826835C2.87827 0.856863 2.50469 0.971241 2.25738 1.06651C1.95257 1.17816 1.67802 1.35532 1.45024 1.58681C1.21393 1.81038 1.03539 2.08554 0.922876 2.38827C0.826592 2.63341 0.711326 3.00138 0.68134 3.68246C0.648054 4.41541 0.640076 4.63898 0.640076 6.50015C0.640076 8.36132 0.648054 8.58216 0.68134 9.31783C0.711326 9.99619 0.826592 10.3669 0.922876 10.6123C1.03539 10.9145 1.21393 11.1872 1.44749 11.4132C1.67252 11.645 1.94982 11.8221 2.25463 11.9338C2.50194 12.0291 2.8725 12.1437 3.55914 12.1735C4.29778 12.2062 4.52308 12.2144 6.3987 12.2144C8.27432 12.2144 8.4966 12.2062 9.23826 12.1735C9.92188 12.1437 10.2955 12.0291 10.5425 11.9338C11.1549 11.6993 11.641 11.2172 11.8773 10.6093C11.9733 10.3642 12.0886 9.99619 12.1188 9.31511C12.1518 8.57943 12.1601 8.36132 12.1601 6.50015C12.1601 4.63898 12.1518 4.41814 12.1188 3.68246ZM6.39595 10.0781C4.40231 10.0781 2.78474 8.47297 2.78474 6.49469C2.78474 4.51641 4.40231 2.9113 6.39595 2.9113C8.38958 2.9113 10.0072 4.51641 10.0072 6.49469C10.0072 8.47297 8.38958 10.0781 6.39595 10.0781ZM10.1499 3.6063C9.68419 3.6063 9.30676 3.2315 9.30676 2.76962C9.30676 2.30747 9.68419 1.93322 10.1499 1.93322C10.6154 1.93322 10.9931 2.30747 10.9931 2.76962C10.9931 3.2315 10.6154 3.6063 10.1499 3.6063Z" />
+                                <path
+                                    d="M8.05201 8.13841C8.96679 7.23067 8.96679 5.75895 8.05201 4.85122C7.13723 3.94349 5.65408 3.94349 4.7393 4.85122C3.82452 5.75895 3.82452 7.23067 4.7393 8.13841C5.65408 9.04614 7.13723 9.04614 8.05201 8.13841Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_271_451">
+                                    <rect width="11.52" height="11.4285" fill="white"
+                                        transform="translate(0.640076 0.785889)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const anchors = document.querySelectorAll('a[href*="#"]');
+
+        anchors.forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                const duration = 1000;
+                let start = null;
+
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    const progress = timestamp - start;
+                    const progressRate = Math.min(progress / duration, 1);
+                    const easeInOutQuad = progressRate < 0.5 ? 2 * progressRate * progressRate : 1 - Math.pow(-2 * progressRate + 2, 2) / 2;
+                    window.scrollTo(0, startPosition + distance * easeInOutQuad);
+
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    }
+                }
+
+                window.requestAnimationFrame(step);
+            });
+        });
+        
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.careers__slide');
+        const totalSlides = slides.length;
+        const visibleSlides = 3;
+
+        document.querySelector('#prev').addEventListener('click', () => {
+            moveSlide(-1);
+        });
+
+        document.querySelector('#next').addEventListener('click', () => {
+            moveSlide(1);
+        });
+
+        document.querySelector('#nextMob').addEventListener('click', () => {
+            moveSlide(1);
+        });
+
+        function moveSlide(n) {
+            currentIndex += n;
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - visibleSlides;
+            } else if (currentIndex >= totalSlides - visibleSlides + 1) {
+                currentIndex = 0;
+            } else if (window.innerWidth < 658) {
+                updateSlidePositionMobile();
+                return;
+            } else if (window.innerWidth < 800) {
+                updateSlidePositionTablet();
+                return;
+            }
+            updateSlidePosition();
+        }
+
+        function updateSlidePosition() {
+            document.querySelector('.careers__slidebar').style.transform = `translateX(-${currentIndex * 420}px)`
+        }
+
+        function updateSlidePositionTablet() {
+            document.querySelector('.careers__slidebar').style.transform = `translateY(-${currentIndex * 475}px)`
+
+        }
+        function updateSlidePositionMobile() {
+            document.querySelector('.careers__slidebar').style.transform = `translateY(-${currentIndex * 432}px)`
+
+        }
+
+        document.querySelector('.application__form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const inputs = document.querySelectorAll('.application__form-inputfield[required], .application__form-checkbox input[required]');
+
+            let allValid = true;
+
+            inputs.forEach(input => {
+                const parent = input.closest('.application__form-input, .application__form-checkbox');
+
+                if (input.type === 'checkbox' && !input.checked) {
+                    parent.classList.add('invalid');
+                    allValid = false;
+                } else if (input.type !== 'checkbox' && !input.value.trim()) {
+                    parent.classList.add('invalid');
+                    allValid = false;
+                } else {
+                    parent.classList.remove('invalid');
+                }
+            });
+
+            if (allValid) {
+                this.submit();
+            }
+        });
+
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+
+
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+
+            if (content.style.display === 'flex') {
+                content.style.display = 'none';
+                element.classList.remove('bold');
+            } else {
+                document.querySelectorAll('.accordion-content').forEach(item => item.style.display = 'none');
+                document.querySelectorAll('.accordion-title').forEach(title => title.classList.remove('bold'));
+
+                content.style.display = 'flex';
+                element.classList.add('bold');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
